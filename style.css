@@ -79,7 +79,6 @@ body {
 .project {
 	display: flex;
 	flex-direction: column;
-	gap: 4em;
 }
 
 .top {
@@ -97,7 +96,7 @@ body {
 
 .text {
 	font-size: 1.1em;
-	margin-top: 0 !important;
+	margin: 0;
 }
 
 .bottom {
@@ -105,8 +104,10 @@ body {
 	flex-direction: row;
 	justify-items: flex-start;
 	gap: 1em;
-	
 	overflow-x: scroll;
+	border-top: 2px solid #dddddd;
+	margin-top: 2em;
+	padding-top: 2em;
 }
 
 .bottom img {
