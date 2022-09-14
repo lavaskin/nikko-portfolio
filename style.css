@@ -117,3 +117,10 @@ body {
 	border-radius: 20px;
 	border: 6px solid var(--back);
 }
+
+@media screen and (max-width: 750px) {
+    .top p,
+    .project p {
+		font-size: 2em;
+	}
+}
