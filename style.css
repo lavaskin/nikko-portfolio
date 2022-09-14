@@ -5,19 +5,6 @@
 }
 
 
-/* SCROLLBAR */
-*::-webkit-scrollbar {
-	width: 6px;
-}
-*::-webkit-scrollbar-track {
-	background: var(--back);
-}
-*::-webkit-scrollbar-thumb {
-	background-color: var(--accent);
-	border-radius: 20px;
-	border: 6px solid var(--back);
-}
-
 body {
 	margin: 0;
 }
@@ -32,6 +19,9 @@ body {
 	padding: .5em;
 	max-height: 3em;
 	background-color: white;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
 }
 
 .navbar img {
@@ -112,4 +102,18 @@ body {
 	object-fit: contain;
 	max-height: 30em;
 	
+}
+
+
+/* BOTTOM SCROLLBAR */
+.bottom::-webkit-scrollbar {
+	width: 6px;
+}
+.bottom::-webkit-scrollbar-track {
+	background: var(--back);
+}
+.bottom::-webkit-scrollbar-thumb {
+	background-color: var(--accent);
+	border-radius: 20px;
+	border: 6px solid var(--back);
 }
