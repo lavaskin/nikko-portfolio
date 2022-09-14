@@ -84,8 +84,7 @@ body {
 
 }
 
-.top p,
-.project p {
+.text {
 	font-size: 1.5em;
 }
 
@@ -104,6 +103,13 @@ body {
 	
 }
 
+@media screen and (max-width: 750px) {
+    .text {
+		font-size: 2em;
+		color: red;
+	}
+}
+
 
 /* BOTTOM SCROLLBAR */
 .bottom::-webkit-scrollbar {
@@ -116,11 +122,4 @@ body {
 	background-color: var(--accent);
 	border-radius: 20px;
 	border: 6px solid var(--back);
-}
-
-@media screen and (max-width: 750px) {
-    .top p,
-    .project p {
-		font-size: 2em;
-	}
 }
