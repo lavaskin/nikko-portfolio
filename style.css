@@ -87,14 +87,17 @@ body {
 	flex-direction: row;
 	height: 60%;
 	gap: 2em;
+	align-items: flex-start;
 }
 
 .top img {
-	width: 25%;
+	max-width: 25%;
+	object-fit: contain;
 }
 
 .text {
 	font-size: 1.1em;
+	margin-top: 0 !important;
 }
 
 .bottom {
