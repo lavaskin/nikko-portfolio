@@ -2,8 +2,8 @@ document.body.onload = main;
 function main() {
 	let email = document.getElementsByClassName('email')[0];
 	email.addEventListener('click', () => {
-		navigator.clipboard.writeText('cor2323@comcast.net').then(() => {
-			alert('Coped to clipboard!');
+		navigator.clipboard.writeText('design@nikkorobledo.art').then(() => {
+			alert('Copied to clipboard!');
 		}).catch(() => {
 			alert('Failed to copy to clipboard!');
 		});
