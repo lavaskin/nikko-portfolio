@@ -12,13 +12,30 @@
 </head>
 
 <body>
-	<script src="script.js"></script>
+	<script>
+		document.body.onload = main;
+		function main() {
+			let email = document.getElementsByClassName('email')[0];
+			email.addEventListener('click', () => {
+				navigator.clipboard.writeText('design@nikkorobledo.art').then(() => {
+					alert('Copied to clipboard!');
+				}).catch(() => {
+					alert('Failed to copy to clipboard!');
+				});
+			});
+
+			let linkedIn = document.getElementsByClassName('linkedin')[0];
+			linkedIn.addEventListener('click', () => {
+				window.open('https://www.linkedin.com/in/nikko-robledo-58a084158/', '_blank');
+			});
+		}
+	</script>
 
 	<div class="navbar">
 		<img src="assets/logo.jpeg" alt="Logo" class="logo" style="margin-left: 1em;">
 		<p class="header">Nikko Robledo</p>
 
-		<p class="email max-620">Contact @ cor2323@comcast.net</p>
+		<p class="email max-620">Contact @ design@nikkorobledo.art</p>
 		<img src="assets/linkedin.svg" alt="LinkedIn" class="linkedin" style="margin-right: 1em;">
 	</div>
 
@@ -26,7 +43,17 @@
 		
 		<div class="block">
 			<h1>About Me</h1>
-			<p class="text">WIP</p>
+			<div class="project">
+				<div class="top">
+					<img src="assets/projects/About Me/me.jpg" alt="Project Image" loading="lazy">
+					<p class="text">Nikko Robledo is a Graphic Designer located in Oregon who aspires 
+						to become a teacher and graduated with a BA in Visual Communication and Design. 
+						Nikko had always excelled academically but would constantly 
+						get caught filling his notebooks with drawings. But his teachers would rarely 
+						reprimand him and would instead be encouraging which has given him a lifelong 
+						love for art and education.  </p>
+				</div>
+			</div>
 		</div>
 
 		<div class="block">
@@ -55,7 +82,9 @@
 					<img src="assets/projects/Closed Labor Day/Social Media signage.jpg" alt="Project Image" loading="lazy">
 					<p class="text">This signage was created for Tualatin Hills Parks & Recreation to inform visitors via social media
 						of the change in schedule for Labor Day. This design utilizes the red, white, and blue present on the 
-						American flag to evoke the festivites that one would commonly associate with Labor day.
+						American flag to evoke the festivites that one would commonly associate with Labor day. Through THPRD I made many
+					similar signs for other holidays like the 4th of July and Veteran's Day as well, all with variants to be used for either
+					social media or for use in facilities.
 					</p>
 				</div>
 				<div class="bottom">
@@ -190,13 +219,13 @@
 				<div class="bottom">
 					<img src="assets/projects/Photos/Waterhouse bench.jpg" alt="Failed!" loading="lazy">
 					<img src="assets/projects/Photos/Bannister stream 1.jpg" alt="Failed!" loading="lazy">
+					<img src="assets/projects/Photos/quadrents.jpg" alt="Failed!" loading="lazy">
+					<img src="assets/projects/Photos/signs.jpg" alt="Failed!" loading="lazy">
 					<img src="assets/projects/Photos/Bannister stream 2.jpg" alt="Failed!" loading="lazy">
 					<img src="assets/projects/Photos/billiards.jpg" alt="Failed!" loading="lazy">
 					<img src="assets/projects/Photos/chime.jpg" alt="Failed!" loading="lazy">
 					<img src="assets/projects/Photos/greenway stream.jpg" alt="Failed!" loading="lazy">
 					<img src="assets/projects/Photos/moss poles.jpg" alt="Failed!" loading="lazy">
-					<img src="assets/projects/Photos/quadrents.jpg" alt="Failed!" loading="lazy">
-					<img src="assets/projects/Photos/signs.jpg" alt="Failed!" loading="lazy">
 					<img src="assets/projects/Photos/stoller trees.jpg" alt="Failed!" loading="lazy">
 				</div>
 			</div>
@@ -204,7 +233,7 @@
 
 		<div class="block footer">
 			<img src="assets/logo.jpeg" alt="Logo" class="logo mr-auto">
-			<p class="email">Contact @ cor2323@comcast.net</p>
+			<p class="email">Contact @ design@nikkorobledo.art</p>
 		</div>
 
 	</div>
