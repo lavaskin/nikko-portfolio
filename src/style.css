@@ -39,13 +39,14 @@ body {
 }
 
 .email {
-	cursor: pointer;
 	transition: 0.5s;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
 }
 
 .navbar .email:hover {
 	color: var(--accent);
-	text-decoration: underline;
 }
 
 
@@ -64,7 +65,8 @@ body {
 }
 
 .block h1 {
-	margin-bottom: 2em;
+	margin: 0;
+	margin-bottom: 1em;
 }
 
 .footer {
@@ -113,7 +115,6 @@ body {
 .bottom img {
 	object-fit: contain;
 	max-height: 30em;
-	
 }
 
 
@@ -131,8 +132,28 @@ body {
 }
 
 
-@media screen and (max-width: 620px) {
-	.max-620 {
+/* DIALOG */
+.dialog {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: #000000b5;
+	display: none;
+	align-items: center;
+}
+
+.dialog img {
+	max-width: 100%;
+	max-height: 100%;
+	box-shadow: 0 0 10px 0px #000000b5;
+	background-color: white;
+}
+
+
+@media screen and (max-width: 640px) {
+	.max-640 {
 		display: none;
 	}
 
@@ -142,5 +163,19 @@ body {
 
 	.text {
 		font-size: 1.2em;
+	}
+
+	.top {
+		flex-direction: column;
+	}
+
+	.top img {
+		max-width: 100%;
+		object-fit: scale-down;
+	}
+
+	.bottom img {
+		object-fit: contain;
+		max-height: 15em;
 	}
 }
