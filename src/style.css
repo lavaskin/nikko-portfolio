@@ -39,13 +39,14 @@ body {
 }
 
 .email {
-	cursor: pointer;
 	transition: 0.5s;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
 }
 
 .navbar .email:hover {
 	color: var(--accent);
-	text-decoration: underline;
 }
 
 
@@ -131,8 +132,8 @@ body {
 }
 
 
-@media screen and (max-width: 620px) {
-	.max-620 {
+@media screen and (max-width: 640px) {
+	.max-640 {
 		display: none;
 	}
 

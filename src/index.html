@@ -15,15 +15,6 @@
 	<script>
 		document.body.onload = main;
 		function main() {
-			let email = document.getElementsByClassName('email')[0];
-			email.addEventListener('click', () => {
-				navigator.clipboard.writeText('design@nikkorobledo.art').then(() => {
-					alert('Copied to clipboard!');
-				}).catch(() => {
-					alert('Failed to copy to clipboard!');
-				});
-			});
-
 			let linkedIn = document.getElementsByClassName('linkedin')[0];
 			linkedIn.addEventListener('click', () => {
 				window.open('https://www.linkedin.com/in/nikko-robledo-58a084158/', '_blank');
@@ -35,7 +26,7 @@
 		<img src="assets/logo.jpeg" alt="Logo" class="logo" style="margin-left: 1em;">
 		<p class="header">Nikko Robledo</p>
 
-		<p class="email max-620">Contact @ design@nikkorobledo.art</p>
+		<a class="email max-640" href="mailto:design@nikkorobledo.art">Contact @ design@nikkorobledo.art</a>
 		<img src="assets/linkedin.svg" alt="LinkedIn" class="linkedin" style="margin-right: 1em;">
 	</div>
 
@@ -233,7 +224,7 @@
 
 		<div class="block footer">
 			<img src="assets/logo.jpeg" alt="Logo" class="logo mr-auto">
-			<p class="email">Contact @ design@nikkorobledo.art</p>
+			<a class="email" href="mailto:design@nikkorobledo.art">design@nikkorobledo.art</a>
 		</div>
 
 	</div>
