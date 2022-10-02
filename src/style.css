@@ -142,6 +142,7 @@ body {
 	background-color: #000000b5;
 	display: none;
 	align-items: center;
+	justify-content: center;
 }
 
 .dialog img {
