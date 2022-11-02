@@ -51,6 +51,26 @@ body {
 
 
 /* PAGE CONTENT */
+.project-text {
+	text-align: center;
+}
+
+.project-btn {
+	height: 15vw;
+	width: 15vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10%;
+}
+
+.button-grps {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2em;
+	align-items: flex-start;
+}
+
 .page {
 	display: flex;
 	flex-direction: column;
@@ -67,6 +87,8 @@ body {
 .block h1 {
 	margin: 0;
 	margin-bottom: 1em;
+	scroll-margin-top: 3em;
+	scroll-snap-margin-top: 3em;
 }
 
 .footer {
@@ -156,6 +178,11 @@ body {
 @media screen and (max-width: 640px) {
 	.max-640 {
 		display: none;
+	}
+
+	.project-btn {
+		height: 15vw;
+		width: 15vw;
 	}
 
 	.footer {

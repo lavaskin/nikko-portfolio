@@ -37,6 +37,30 @@
 			dialog.addEventListener('click', () => {
 				dialog.style.display = 'none';
 			});
+			
+			// Add listeners to the project scroll buttons
+			const buttons = document.querySelectorAll('.project-btn');
+			const projectHeaders = document.querySelectorAll('.block h1');
+			const buttonsFolder = 'assets/projects/Buttons/';
+			buttons.forEach(btn => {
+				const bgImageURL = btn.style.backgroundImage;
+				const bgImage = bgImageURL.substring(buttonsFolder.length + 5, bgImageURL.indexOf('.')); // + 5 to remove the url('...
+
+				// Find associated project header
+				const projectHeader = [...projectHeaders].find(header => {
+					return header.innerText === bgImage;
+				});
+
+				if (!projectHeader) {
+					console.log('Nikko you forgot to change the name of the project image when you changed the project title!')
+					return;
+				}
+
+				// Scroll to the header
+				btn.addEventListener('click', () => {
+					projectHeader.scrollIntoView({behavior: 'smooth'});
+				});
+			});
 		}
 	</script>
 
@@ -50,6 +74,25 @@
 
 	<div class="page">
 		
+		<div class="block">
+			<div class=project-text><h1>Projects</h1></div>
+			<div class="project">
+				<div class="button-grps">
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/Marine Conservation Institute.jpg')"></button>
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/Labor Day Signage.jpg')"></button>
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/Desert Sun.jpg')"></button>
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/Nicolai Income Insurance.jpg')"></button>
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/Dia De Los Muertos Signage.jpg')"></button>
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/Moon Madness.jpg')"></button>
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/Covid Contagion Poster.jpg')"></button>
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/Purple Skull.jpg')"></button>
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/Surreal Magazine Cover.jpg')"></button>
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/You are (not) a human being.jpg')"></button>
+					<button class="project-btn" style="background-image: url('assets/projects/Buttons/Photos.jpg')"></button>
+				</div>
+			</div>
+		</div>
+
 		<div class="block">
 			<h1>About Me</h1>
 			<div class="project">
@@ -131,6 +174,25 @@
 				<div class="bottom">
 					<img src="assets/projects/NII/Nicolai Income Insurance cards.jpg" alt="Failed!" loading="lazy">
 					<img src="assets/projects/NII/Nicolai Income Insurance letterhead.jpg" alt="Failed!" loading="lazy">
+				</div>
+			</div>
+		</div>
+
+		<div class="block">
+			<h1>Dia De Los Muertos Signage</h1>
+			<div class="project">
+				<div class="top">
+					<img src="assets/projects/Dia De Los/Dia de los Muertos main.jpg" alt="Project Image" loading="lazy">
+					<p class="text">Another signage project that was created for Tualatin Hills Parks & Recreation to inform visitors via social media
+						and in the form of physical displays about a Dia De Los Muertos event. This design incorporates the iconic calavera which is 
+						a recognizable cultural and artistic element of the Day of the Dead festivities that THPRD set put to celebrate. Since this would
+						need to be used across several mediums, it was necessary for the design to be fairly maleable so that it could suit the various
+						enviornments that the design would be found in.</p>
+				</div>
+				<div class="bottom">
+					<img src="assets/projects/Dia De Los/Dia de los Muertos A frame.JPG" alt="Failed!" loading="lazy">
+					<img src="assets/projects/Dia De Los/Dia de los Muertos banner.JPG" alt="Failed!" loading="lazy">
+					<img src="assets/projects/Dia De Los/dia de los social.jpg" alt="Failed!" loading="lazy">
 				</div>
 			</div>
 		</div>
