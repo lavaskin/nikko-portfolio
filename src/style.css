@@ -2,6 +2,9 @@
 	font-family: 'Montserrat', sans-serif;
 	--accent: #3FA9F5;
 	--back: #f3f2f2;
+
+	scroll-margin-top: 3em;
+	scroll-snap-margin-top: 3em;
 }
 
 .mr-auto {
