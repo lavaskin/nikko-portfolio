@@ -51,6 +51,24 @@ body {
 
 
 /* PAGE CONTENT */
+.project-text {
+	text-align: center;
+}
+
+.project-btn {
+	height: 30vh;
+	width: 30vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10%;
+}
+
+.button-grps {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .page {
 	display: flex;
 	flex-direction: column;
