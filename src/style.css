@@ -2,9 +2,6 @@
 	font-family: 'Montserrat', sans-serif;
 	--accent: #3FA9F5;
 	--back: #f3f2f2;
-
-	scroll-margin-top: 3em;
-	scroll-snap-margin-top: 3em;
 }
 
 .mr-auto {
@@ -90,6 +87,8 @@ body {
 .block h1 {
 	margin: 0;
 	margin-bottom: 1em;
+	scroll-margin-top: 3em;
+	scroll-snap-margin-top: 3em;
 }
 
 .footer {
